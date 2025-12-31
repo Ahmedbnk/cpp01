@@ -35,15 +35,14 @@ void Harl::error(void)
 
 void Harl::complain(std::string level)
 {
-  typedef void (Harl::*HarlFn)(void);
-  HarlFn functions[4] = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error };
-  std::string levels[4] = { "DEBUG", "INFO", "WARNING", "ERROR"};
+  void (Harl::*functions[4])() = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error };
+  std::string levels[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
   for (int i = 0; i < 4; i++)
   {
     if (levels[i] == level)
     {
       (this->*functions[i])();
-      return;
+      break;
     }
   }
 }

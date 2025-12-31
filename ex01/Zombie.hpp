@@ -6,7 +6,7 @@
 /*   By: abenkrar <abenkrar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 15:00:59 by abenkrar          #+#    #+#             */
-/*   Updated: 2025/12/18 15:09:35 by abenkrar         ###   ########.fr       */
+/*   Updated: 2025/12/31 17:59:08 by abenkrar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef ZOMBIE_HPP
@@ -24,5 +24,5 @@ class Zombie
   private:
     std::string name;
 };
-Zombie* zombieHorde( int N, std::string name );
+Zombie* zombieHorde(int N, std::string name);
 #endif

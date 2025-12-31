@@ -6,12 +6,12 @@
 /*   By: abenkrar <abenkrar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/27 22:11:32 by abenkrar          #+#    #+#             */
-/*   Updated: 2025/12/27 22:11:32 by abenkrar         ###   ########.fr       */
+/*   Updated: 2025/12/31 19:39:55 by abenkrar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "HumanB.hpp"
 
-HumanB::HumanB(const std::string& name): name(name)
+HumanB::HumanB(const std::string& name): name(name), weapon(NULL)
 {
 }
 void HumanB::setWeapon(Weapon& weapon)
